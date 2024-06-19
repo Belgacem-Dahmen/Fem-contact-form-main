@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <form class="form" action="">
+
+      <h1 class="form__title">Contact Us</h1>
+      <div class="form__personnal-infos">
+
+
+        <div class="form__personnal-infos__firstName v-flex ">
+          <label for="name">First Name <span>*</span></label>
+          <input class="green-border" type="text" name="name">
+        </div>
+
+
+        <div class="form__personnal-infos__LastName v-flex">
+          <label for="Lastname">Last Name <span>*</span></label>
+          <input class="green-border" type="text" name="Lastname">
+        </div>
+
+      </div>
+      <div class="form__personnal-infos-email v-flex">
+        <label for="Lastname">Email Adress<span>*</span></label>
+        <input class="green-border" type="email" name="email">
+      </div>
+
+      <div class="v-flex">
+
+        <label for="">Query Type <span>*</span></label>
+        <div class="form__query">
+          <div class="green-border">
+            <input class="green-border" type="radio" id="General" name="General" value="General" checked />
+            <label for="General">General Enquiry</label>
+          </div>
+
+          <div class="green-border">
+            <input class="green-border" type="radio" id="Support" name="Support" value="Support" />
+            <label for="Support">Support Request</label>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="form__personnal-infos_message v-flex">
+        <label for="message">Message <span>*</span></label>
+        <textarea class="form__personnal-infos_message-textarea green-border" name="message" id="" cols="30" rows="5"></textarea>
+
+      </div>
+
+      <div class="form__personnal-infos_consent">
+        <input type="checkbox" name="consent" id="">
+        <label for="consent"> I consent to being contacted by the team</label>
+      </div>
+
+      <div class="form__button-container ">
+        <button class="form__button"> Submit</button>
+      </div>
+      
+
+      <!-- 
+      First Name
+      This field is required
+
+      Last Name
+      This field is required
+
+      Email Address
+      Please enter a valid email address
+      This field is required -->
+      <!-- 
+      Query Type
+      General Enquiry
+      Support Request
+      Please select a query type
+
+      Message
+      This field is required
+
+      I consent to being contacted by the team
+      To submit this form, please consent to being contacted
+
+     
+
+      Message Sent!
+      Thanks for completing the form. We'll be in touch soon! -->
+    </form>
+  </div>
+
+</body>
+
+</html>

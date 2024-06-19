@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+/* Variables */
+:root {
+    /* Layout */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    /* Primary Colors */
+    --color-green-200: hsl(148, 38%, 91%);
+    --color-green-600: hsl(169, 82%, 27%);
+    --color-red: hsl(0, 66%, 54%);
+
+    /* Neutral Colors */
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-500: hsl(186, 15%, 59%);
+    --color-grey-900: hsl(187, 24%, 22%);
+
+    /* Typography */
+    --font-family: "Karla", sans-serif;
+    --font-size-labels: 16px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+input,
+textarea {
+    font-family: var(--font-family);
+    font-size: var(--font-size-labels);
+}
+
+.v-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-items: center;
+
+}
+
+
+.green-border {
+    border: 1px solid var(--color-green-600);
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1;
+}
+
+/* Base styles (Mobile First) */
+
+body {
+    font-size: var(--font-size-labels);
+    color: var(--color-grey-900);
+    background-color: var(--color-green-200);
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+.container {
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin: 20px 15px;
+    padding: 15px 30px;
+    min-width: auto;
+}
+
+.form__title {
+    margin-bottom: 20px;
+}
+
+.form__query {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__personnal-infos_consent {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.form__button {
+    display: flex;
+    min-width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: var(--color-green-600);
+    color: var(--color-white);
+    border: none;
+}
+.form__personnal-infos_message-textarea{
+    
+    width: auto;
+}
+
+/* Responsive Layout */
+@media (min-width: 376px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        min-width: 700px;
+        padding: 30px 40px;
+
+    }
+
+    .form__query {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .form__personnal-infos {
+        display: flex;
+        gap: 15px;
+    }
+
+    .form__personnal-infos__firstName {
+        flex: 1;
+    }
+
+    .form__personnal-infos__LastName {
+        flex: 1;
+    }
+
+}
