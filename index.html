@@ -26,18 +26,21 @@
         <div class="form__personnal-infos__firstName v-flex ">
           <label for="name">First Name <span>*</span></label>
           <input class="green-border" type="text" name="name">
+          <p class="error-msg">This field is required</p>
         </div>
 
 
         <div class="form__personnal-infos__LastName v-flex">
           <label for="Lastname">Last Name <span>*</span></label>
           <input class="green-border" type="text" name="Lastname">
+          <p class="error-msg">This field is required</p>
         </div>
 
       </div>
       <div class="form__personnal-infos-email v-flex">
         <label for="Lastname">Email Adress<span>*</span></label>
         <input class="green-border" type="email" name="email">
+        <p class="error-msg">Please enter a valid email adress</p>
       </div>
 
       <div class="v-flex">
@@ -45,35 +48,44 @@
         <label for="">Query Type <span>*</span></label>
         <div class="form__query">
           <div class="green-border">
-            <input class="green-border" type="radio" id="General" name="General" value="General" checked />
+            <input class="green-border" type="radio" id="General" name="Query Type" value="General" />
             <label for="General">General Enquiry</label>
           </div>
 
           <div class="green-border">
-            <input class="green-border" type="radio" id="Support" name="Support" value="Support" />
+            <input class="green-border" type="radio" id="Support" name="Query Type" value="Support" />
             <label for="Support">Support Request</label>
           </div>
         </div>
 
+        <p class="error-msg">Please select a query type </p>
       </div>
 
 
 
       <div class="form__personnal-infos_message v-flex">
         <label for="message">Message <span>*</span></label>
-        <textarea class="form__personnal-infos_message-textarea green-border" name="message" id="" cols="30" rows="5"></textarea>
+        <textarea class="form__personnal-infos_message-textarea green-border" name="message" id="" cols="30"
+          rows="5"></textarea>
+        <p class="error-msg">This field is required</p>
 
       </div>
 
       <div class="form__personnal-infos_consent">
+
         <input type="checkbox" name="consent" id="">
         <label for="consent"> I consent to being contacted by the team</label>
+
       </div>
+
+      <p class="error-msg">To submit this form , please conscent to being contacted</p>
+
 
       <div class="form__button-container ">
         <button class="form__button"> Submit</button>
+
       </div>
-      
+
 
       <!-- 
       First Name
