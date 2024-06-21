@@ -43,10 +43,15 @@ dd {
     margin: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 input,
 textarea {
     font-family: var(--font-family);
     font-size: var(--font-size-labels);
+
 }
 
 .v-flex {
@@ -137,8 +142,41 @@ body {
     width: auto;
 }
 
+
+
+.validation-message {
+    position: absolute;
+    top: 20px;
+    background-color: var(--color-green-600);
+    padding: 20px;
+    color: var(--color-white);
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s ease-out;
+
+}
+
+.validation-message.show {
+    opacity: 1;
+    transform:  translateY(25%);
+}
+
+.validation-message_div {
+    display: flex;
+    gap: 10px;
+}
+
+.validation-message__success {
+    font-size: 1.125rem;
+}
+
+.validation-message__text {
+    margin-top: 10px;
+    color: var(--color-white)
+}
+
 /* Responsive Layout */
-@media (min-width: 376px) {
+@media (min-width: 476px) {
     body {
         width: 100vw;
         height: 100vh;
