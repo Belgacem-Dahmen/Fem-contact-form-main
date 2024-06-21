@@ -64,11 +64,16 @@
         <p class="error-msg" id="message_error">This field is required</p>
       </div>
 
-      <div class="form__personnal-infos_consent">
-        <input type="checkbox" name="consent" id="consent" autocomplete="off">
-        <label for="consent"> I consent to being contacted by the team</label>
+      <div class="form__personnal-infos_consent-container">
+        <div class="form__personnal-infos_consent">
+          <input type="checkbox" name="consent" id="consent" autocomplete="off">
+          <label for="consent"> I consent to being contacted by the team</label>
+        </div>
+        
+        <p class="error-msg" style="margin-top:20px" id="consent_error">To submit this form, please consent to being
+          contacted</p>
+
       </div>
-      <p class="error-msg" id="consent_error">To submit this form, please consent to being contacted</p>
 
       <div class="form__button-container ">
         <button class="form__button" id="onSubmit" type="submit"> Submit</button>
